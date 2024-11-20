@@ -1,0 +1,171 @@
+<!--
+Name:Yusuff
+Course:Web Developement P4
+Teacher:Ms Hointink
+School:Ptc
+Date Last Modified:11/18/2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treaty One</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Make the text in header, nav, and footer centered */
+        header, nav, footer {
+            text-align: center;
+        }
+    
+        /* Style for the main content section */
+        .content {
+            display: flex; /* Use flexbox to organize the layout */
+            flex-direction: column; /* Stack items in a column */
+            align-items: center; /* Center the items horizontally */
+            justify-content: center; /* Center the items vertically */
+            background-color: white; /* Set background color to white */
+            padding: 20px; /* Add 20px of space inside the box */
+            margin: 10px auto; /* Add space around it and center it on the page */
+            max-width: 80%; /* Limit the width to 80% of the screen */
+            border-radius: 8px; /* Round the corners of the box */
+        }
+    
+        /* Center the text and images in these elements */
+        figure, pre, .image-container img, #video-container {
+            text-align: center;
+            margin: 0 auto; /* Center everything */
+        }
+    
+        /* Make images and videos center-aligned and block elements */
+        .image-container img, #video-container iframe {
+            display: block; /* Make them block elements to align properly */
+            margin: 0 auto; /* Center them horizontally */
+        }
+    
+        /* Style for preformatted text (code or special text) */
+        pre {
+            font-size: 20px; /* Set the text size to 20px */
+            font-family: sans-serif; /* Use a clean sans-serif font */
+        }
+    
+        /* Set specific size for images in the image container */
+        .image-container img {
+            width: 400px; /* Make the image 400px wide */
+            height: 500px; /* Make the image 500px tall */
+            margin: 0 auto; /* Center the image */
+        }
+    
+        /* Make text in the "highlight" class stand out */
+        .highlight {
+            background-color: rgb(57, 122, 128); /* Change background color to teal */
+            font-weight: bold; /* Make the text bold */
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <!-- Header section displaying main title -->
+    <header>
+        <h1 id="main-title">Treaty One</h1>
+    </header>
+
+    <!-- Navigation bar with links to different pages -->
+    <nav aria-label="Main navigation">
+        <a href="Web-Project2.html" aria-label="Go to Home page">Home</a>
+        <a href="ContinuedExploration.html" aria-label="Go to Continued Exploration page">Continued Exploration</a>
+    </nav>
+
+    <hr>
+
+    <!-- Main content section -->
+    <main class="content">
+        
+        <!-- Section discussing the treaty negotiation location -->
+        <section id="treaty-location">
+            <h2>Where the Treaty Was Negotiated</h2>
+            <pre>
+Treaty 1 was negotiated and signed at <span class="highlight">Lower Fort Garry</span>, Winnipeg, Manitoba on August 3, 1871.
+<a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2" aria-label="Read more about Treaty One signing on the Canadian Encyclopedia website">Treaty One Signed</a>
+            </pre>
+        </section>
+        
+        <!-- Section with map image and caption -->
+        <section id="treaty-map">
+            <h2>Map of the Treaty Area</h2>
+            <figure class="image-container">
+                <img src="images/Treaty-Map.jpg" alt="Map of Treaty One showing the locations of the Treaty One First Nations">
+                <figcaption class="map-title">Map of Treaty One</figcaption>
+                <a href="https://communities4families.ca/about-us/land-acknowledgement/" aria-label="View Treaty Map on Communities for Families website">Treaty Map</a>
+            </figure>
+        </section>
+
+        <!-- Section discussing the nations involved -->
+        <section id="nations-involved">
+            <pre>
+The Treaty One First Nations are the seven nations that signed Treaty No. 1 on August 3, 1871. 
+This treaty was made between the <span class="highlight">Anishinaabe</span> and Muskegon Cree peoples and the Crown. 
+These nations have a shared history and work together to protect their Treaty rights and traditional lands.
+
+<a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2" aria-label="Read the Treaty Texts for Treaty One and Two on the Canadian Encyclopedia website">Treaty Texts - Treaties No. 1 and No. 2</a>
+            </pre>
+        </section>
+
+        <!-- Section with list of communities -->
+        <section id="communities">
+            <h2>Communities Involved</h2>
+            <pre>
+The Treaty One First Nations include:
+- Brokenhead Ojibway Nation
+- Long Plain First Nation
+- Peguis First Nation
+- Roseau River Anishinabe First Nation
+- Sagkeeng First Nation
+- Sandy Bay Ojibway First Nation
+- Swan Lake First Nation
+
+<a href="https://treaty1.ca/questions-answers" aria-label="Read Questions and Answers about Treaty One on the Treaty One website">Questions & Answers - Treaty One</a><br>
+These communities are mostly from the <span class="highlight">Anishinaabe</span> and Swampy Cree nations.
+            </pre>
+        </section>
+
+        <!-- Additional image with link -->
+        <section id="treaty-image">
+            <img src="images/treaty-111.jpg" alt="Photo of Treaty One historical site" width="400" height="300">
+            <a href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/" aria-label="Learn more about the 150th anniversary of Treaty One on Canadian Geographic">Treaty 1</a>
+        </section>
+
+        
+        <section id="unique-aspects">
+            <h2>What Makes This Treaty Different</h2>
+            <pre>
+What makes this treaty different is that it focused on land for settlement and farming aid but did not include as many provisions as later treaties. 
+Disputes arose from unfulfilled promises, unlike later agreements like Treaty 6, which included more provisions such as health care.
+            </pre>
+        </section>
+
+        <!-- Embedded video providing additional context -->
+        <section id="video-section">
+            <div id="video-container">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/8uB83G7xZgU?si=NVCX5qk2h_yi2vTl" 
+                        title="YouTube video about Treaty One" 
+                        aria-label="YouTube video about the history and significance of Treaty One" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>&copy; 2024 Treaty One. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

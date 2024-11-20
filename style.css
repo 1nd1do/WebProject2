@@ -1,0 +1,77 @@
+/* Color Scheme Explanation:
+
+1. The background color is a light blue (#87cefa). I chose this color because it’s calm and easy on the eyes. Blue is also a color that makes people feel relaxed and happy.
+
+2. For the text, I used a darker color (#333333) so it's easy to read. Dark text stands out better against the light blue background.
+
+3. The headings (h2) is light gray (#464040). This helps make the headings stand out but still keeps the design soft and not too bright, making it easier to look at.
+
+4. For links, I picked a soft blue (#5f9ea0) instead of a really bright blue. It’s easy to see but not too strong. When you hover over the link, it turns yellow (#ffcc00), which looks nice and gives a cool effect.
+
+5. The footer is a bit darker blue (#6495ed), so it’s different from the rest of the page but still matches the blue theme.
+
+6. I used yellow for the link hover and focus outline so it’s easy to see when you click or focus on a link. This helps people navigate the website better.
+
+The whole color scheme is meant to look nice and be easy to use, with soft colors that are still clear and stand out when needed. */
+
+
+
+/* Subtitle styles */
+h2 {
+    font-size: 20px;
+    color: #464040; /* Lighter gray instead of white for a softer contrast */
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+/* Video container styles */
+#video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Italic text style */
+.italic {
+    font-style: italic;
+}
+
+/* Image container styles */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Link styles with better contrast */
+a {
+    color: #5f9ea0; /* Softer blue instead of bright blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc00; /* Keep yellow on hover for contrast */
+}
+
+a:focus {
+    outline: 2px solid #ffcc00; /* Outline on focus for accessibility */
+}
+
+/* Body and footer styles */
+body {
+    background-color: #87cefa; /* Light blue background */
+    color: #333333; /* Darker text for better readability */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #6495ed; /* Lighter blue for footer */
+    color: #ffffff;
+    padding: 10px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #5f9ea0; /* Softer blue for links */
+}
